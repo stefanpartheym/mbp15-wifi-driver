@@ -5,6 +5,11 @@ This repository provides scripts to make the installation process of the wifi dr
 
 ---
 
-- In MacOS, install `json` through `npm`: `npm install -g json`. Then execute the `collect.sh` script to collect the required driver files. (Alternatively you might as well download the required files by executing the `download.sh` script)
-- Boot your Linux OS
-- execute the `install.sh` script, which copies the previously collected or downloaded files to the correct location in your Linux system.
+- In MacOS:
+  - execute the `collect.sh` script to collect the required driver files - requires Node.js installation (containing `npx` - default since Node.js 9.4.0),
+  - copy resulting `driver-files` to drive shared with Linux, e.g. USB stick.
+- On Linux:
+  - either:
+    - copy `driver-files` from shared drive to this repo, or
+    - download the required files by executing the `download.sh` script,
+  - execute the `install.sh` script, which copies the previously collected or downloaded files to the correct location in your Linux system.
