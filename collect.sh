@@ -23,7 +23,7 @@ version="4364"
 name="C-$version"
 source_path="/usr/share/firmware/wifi"
 dest_raw="./driver-files"
-j="json"
+j="npx json"
 
 # ---
 
